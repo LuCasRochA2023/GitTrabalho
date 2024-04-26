@@ -29,13 +29,6 @@ public class Dados {
         em.remove(o);
         etx.commit();
     }
-    public List listar(){
-        return em.createNativeQuery("select * from pessoa p",Pessoa.class)
-                .getResultList();
-    }
-    public List listarOO(){
-        return em.createNativeQuery("select p from Pessoa p")
-                .getResultList();
-    }
+
     
 }
